@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/chartstyles.css">
+    <title>Dashboard Test</title>
+
+</head>
+
+<body>
+    <!-- <div id="linechart-container" class="linechart-svg‐container"></div>
+    <div class="piechart-container">
+        <svg class="pie-chart-svg" width="500" height="400"></svg>
+    </div> -->
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li><a href="#"><i class="neu-cloud-snow"></i></a></li>
+                <li><button aria-label="nav-close-btn" class="nav-close-btn"><i class="neu-close-sm"></i></button></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="active"><i class="neu-menu"></i></a></li>
+                <li><a href="#"><i class="neu-laptop-setting"></i></a></li>
+                <li><a href="#"><i class="neu-user-2"></i></a></li>
+                <li><a href="#"><i class="neu-pie-chart-ui"></i></a></li>
+                <li><a href="#"><i class="neu-settings"></i></a></li>
+            </ul>
+            
+            
+        </nav>
+        <div class="container-child">
+
+            <header class="header">
+                <div class="header-left">
+                    <button aria-label="nav-open-btn" class="nav-open-btn"><i class="neu-hamburger-menu"></i></button>
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="header-right">
+                    <button aria-label="search button"><i class="neu-search"></i></button>
+                    <button aria-label="bell notification"><i class="fas fa-bell"></i><span></span></button>
+                    <span class="gravatar">
+                        <img src="./assets/img/gravatar.png" alt="user gravatar">
+                    </span>
+
+                </div>
+            </header>
+            <div class="wrapper">
+                <div class="wrapper-left">
+                    <div class="wl-section-one">
+                        <h3>Hi, Dabo</h3>
+                        <p>Here's your activity for today, take out time to look at it.</p>
+                    </div>
+
+                    <div class="wl-section-two">
+                        <div class="wl-st-left">
+                            <div><span><i class="neu-laptop-open"></i></span></div>
+                            <div>
+                                <h4>Assigned Ticket</h4><span>57</span>
+                            </div>
+                        </div>
+                        <div class="wl-st-right">
+                            <div><span><i class="neu-laptop-setting"></i></span></div>
+                            <div>
+                                <h4>Overdue Ticket</h4><span>10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wl-section-three">
+                        <div class="wl-s3-head"><h3>Ticket Sources</h3> <span>Day <i class="neu-scroll-v"></i></span></div>
+                        <div>
+                            <div id="linechart-container" class="linechart-svg‐container"></div>
+                        </div>
+                        <div class="wl-s3-footer">
+                            <span><i class="fas fa-circle"></i> Email: 70</span>
+                            <span><i class="fas fa-circle"></i> LiveChat: 70</span>
+                            <span><i class="fas fa-circle"></i> Calls: 70</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-right">
+                    <div class="wr-section-one">
+                        <div class="wr-s1-head"><h3>Ticket Status</h3> <span>Day <i class="neu-scroll-v"></i></span></div>
+                        <div id="piechart-container">
+                            <svg class="pie-chart-svg" width="150" height="150"></svg>
+                        </div>
+
+                        <div class="wr-s1-footer">
+                            <span><i class="fas fa-circle"></i> Open</span> 
+                            <span><i class="fas fa-circle"></i> Pending</span> 
+                            <span><i class="fas fa-circle"></i> Closed</span>
+                        </div>
+
+                    </div>
+                    <div class="wr-section-two">
+                        <div class="wr-s2-head"><h3>Ticket Category</h3> <span>Day <i class="neu-scroll-v"></i></span></div>
+                        <div class="wr-st-stats">
+                            <div class="progress">
+                                <label><span>Complaints</span> <span>10</span></label>
+                                <div class="progress-bar"><div></div></div>   
+                            </div>
+                            <div class="progress">
+                                <label><span>Enquiry</span> <span>15</span></label>
+                                <div class="progress-bar"><div></div></div>
+                            </div>
+                            <div class="progress">
+                                <label><span>Request</span> <span>28</span></label>
+                                <div class="progress-bar"><div></div></div>
+                            </div>
+                            <div class="progress">
+                                <label><span>Double Deduction</span> <span>7</span></label>
+                                <div class="progress-bar"><div></div></div>
+                            </div>
+                            <div class="progress">
+                                <label><span>Service Pricing</span> <span>17</span></label>
+                                <div class="progress-bar"><div></div></div>
+                            </div>
+                            <div class="progress">
+                                <label><span>Accout Statement</span> <span>12</span></label>
+                                <div class="progress-bar"><div></div></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="/assets/js/charts.js"></script>
+    <script src="main.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
